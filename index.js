@@ -26,6 +26,8 @@ app.get('/users', (req, res)=>{
 })
 
 app.get("/api/users", (req, res) =>{
+    // It is a good practice to add a custom header with naming conention X- "----"
+    res.setHeader("X-MyName", "Abhishek")
      res.json(users)
 })
 
